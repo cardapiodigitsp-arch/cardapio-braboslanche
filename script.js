@@ -135,7 +135,7 @@ function carregarCardapio() {
         "porções": "https://images.pexels.com/photos/31533633/pexels-photo-31533633.jpeg?auto=compress&cs=tinysrgb&w=500",
         "adicionais": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=500&fit=crop",
         "combos": "https://images.unsplash.com/photo-1513185158878-8d8c196b8965?w=500&auto=format&fit=crop",
-        "default": "https://raw.githubusercontent.com/cardapiopedidosonline-prog/cardapioonline/main/embreve.png"
+        "default": "https://raw.githubusercontent.com/cardapiodigitsp-arch/cardapio-braboslanche/main/logo.png"
     };
 
     const produtosOrdenados = [...produtosLoja].sort((a, b) => {
