@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin - Controle de Pedidos</title>
     <link rel="stylesheet" href="admin-style.css">
+    <link rel="manifest" href="manifest.json">
     <style>
         /* Estilos para o Modal de Edição Personalizado */
         .modal-personalizado {
@@ -104,6 +105,7 @@
             font-size: 0.9rem;
         }
     </style>
+
 </head>
 <body>
 
@@ -282,5 +284,13 @@
 </style>
 
 <script type="module" src="admin-script.js"></script>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('sw.js')
+      .then(reg => console.log('Service Worker registrado!'))
+      .catch(err => console.log('Erro ao registrar SW', err));
+  }
+</script>
 </body>
 </html>
