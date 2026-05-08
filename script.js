@@ -315,7 +315,7 @@ window.confirmarPedido = async function() {
 
     try {
         await addDoc(collection(db, "pedidosRecebidos"), novoPedido);
-        const meuWhatsapp = "5538988287076"; 
+        const meuWhatsapp = "5511990226361"; 
         window.open(`https://api.whatsapp.com/send?phone=${meuWhatsapp}&text=${encodeURIComponent(msgWhatsApp)}`, '_blank');
         
         window.mostrarAviso("Sucesso!", `Pedido #${numeroPedido} enviado com sucesso!`, "✅");
